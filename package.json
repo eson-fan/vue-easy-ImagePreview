@@ -26,8 +26,13 @@
   "files": [
     "dist/vue-easy-ImagePreview.umd.min.js",
     "package.json",
+    "CHANGELOG.md",
     "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://path/to/url"
+  },
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"

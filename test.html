@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/" method="post">
+      <button onclick="getHtml()">getHtml</button>
+      <select id="select" name="item1" onchange="change">
+        <option value="volvo">Volvo</option>
+      </select>
+      <select id="select2" name="item2" onchange="change">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel" selected>Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+      <input type="hidden" name="type" value="图标" />
+      <a href="javascript:document.form.submit()">图标</a>
+    </form>
+    <script>
+      function getHtml() {
+        var select = document.getElementById('select')
+        var html = select.innerHTML
+        html += '<option value="audi">Audi</option>'
+        select.innerHTML = html
+        //console.log(select.innerHTML);
+      }
+
+      {
+        item11: ["a"],
+        item12: ["a", 'b'],
+        item13: ["a"],
+        item14: ["a"],
+      }
+
+      function change(event) {
+        alert(event)
+      }
+    </script>
+  </body>
+</html>
