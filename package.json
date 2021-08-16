@@ -31,7 +31,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://path/to/url"
+    "url": "https://github.com/eson-fan/vue-easy-ImagePreview"
   },
   "dependencies": {
     "core-js": "^3.6.5",
